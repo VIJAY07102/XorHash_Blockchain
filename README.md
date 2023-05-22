@@ -3,7 +3,7 @@
 A framework for modeling and simulate a Blockchain protocol.
 It follows a discrete event simulation model. Currently, there are models to simulate **Bitcoin** and **Ethereum**.
 
-Note: The XORhash has been added only to on **Ethereum**, but it can also be added on **Bitcoin**.
+Note: The XORhash has been added only to **Ethereum**, but it can also be added to **Bitcoin**.
 
 
 ### Installation
