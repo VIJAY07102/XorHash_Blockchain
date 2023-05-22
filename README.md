@@ -27,14 +27,26 @@ python -m blocksim.main
 
 Check our wiki: https://github.com/BlockbirdLabs/blocksim/wiki
 
+## Modified model
+Modified version is uploaded here which has Xorhash in it's block header.
+
 ## Abstract
 
-A blockchain is a distributed ledger in which participants that do not fully trust each other agree on the ledger's content by running a consensus algorithm.
-This technology is raising a lot of interest both in academia and industry, but the lack of tools to evaluate design and implementation decisions may hamper fast progress. To address this issue, this paper presents a discrete-event simulator that is flexible enough to evaluate different blockchain implementations. These blockchains can be rapidly modeled and simulated by extending existing models.
-Running Bitcoin and Ethereum simulations allowed us to change conditions and answer different questions about their performance. For example, we concluded that doubling the number of transactions per block has a low impact on the block propagation delay (10ms) and that encrypting communication has a high impact in that delay (more than 25%).
+The usage of internet and technology inspires the industries to work more on IoT based
+applications by decentralizing the data storage to ensure data integrity. In such cases, we
+use blockchain however, with most IoT applications there is always a storage constraint
+where the IoT devices keep generating the data every few minutes resulting in infinite
+growth of blockchain that any simple IoT devices would not be able to handle. The idea
+of deleting old blocks and storing only the recent data by labeling them as expired and
+unexpired blocks while storing Xor of hashes of deleted set of blocks. Although it resolves
+some of the issues and attacks, there can be some communication overhead when a node
+fetches some deleted blocks from other nodes, to validate these blocks, we might need whole
+set of blocks depending on the set size. Hence arriving at a new idea of adding Xor hash
+in the block header itself, that resolves the communication overhead along with that full
+nodes will also be used to always maintain the ledger from the beginning. These ideas will
+be implemented in an effective way that can be used in real world IoT based applications
+or any other storage constrained applications.
 
 ## Full paper
 
-You can find the full paper here: https://www.carlosfaria.com/papers/blocksim-blockchain-simulator.pdf
-
-Aditionaly, the presentation for the 2019 IEEE International Conference on Blockchain can be found here: https://www.carlosfaria.com/talks/blocksim-ieee-blockchain-2019.pdf
+To be submitted for publication
