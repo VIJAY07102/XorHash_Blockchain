@@ -1,10 +1,10 @@
-# BlockSim: Blockchain Simulator
+# A modified version BlockSim for XORhash Blockchain: Blockchain Simulator 
 
 A framework for modeling and simulate a Blockchain protocol.
 It follows a discrete event simulation model. Currently, there are models to simulate **Bitcoin** and **Ethereum**.
 
-This is an ongoing research project, these framework is in a **beta** stage.
-If you find any issue, please report.
+Note: The XORhash has been added only to on **Ethereum**, but it can also be added on **Bitcoin**.
+
 
 ### Installation
 
